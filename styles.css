@@ -1,0 +1,150 @@
+/* =========================
+   CONTROLES BÁSICOS
+   ========================= */
+
+/* Fondo blanco del selectbox */
+.stSelectbox > div[data-baseweb="select"] > div {
+    background-color: white;
+    color: black;
+}
+
+/* Texto general de markdown */
+div[data-testid="stMarkdownContainer"] {
+    color: var(--text-color);
+}
+
+/* Color de fondo para la barra superior */
+div[data-testid="stToolbar"] {
+    background-color: var(--main-bg-color);
+}
+
+/* Botón para extender y colapsar el sidebar */
+.st-emotion-cache-ujm5ma {
+    color: var(--text-color); 
+}
+
+/* Sidebar */
+.stSidebar {
+    background-color: var(--sidebar-bg-color);
+    color: var(--text-color); 
+}
+
+/* Botones generales */
+.stButton > button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: var(--button-color);
+    color: #FFFFFF;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.stButton > button:hover {
+    filter: brightness(1.1);
+}
+
+/* Página principal de la app */
+.stApp {
+    background-color: var(--main-bg-color);
+}
+
+/* Esconder el menú (hamburger icon) */
+.st-emotion-cache-1pbsqtx {
+    display: none;
+}
+.st-emotion-cache-1wbqy5l {
+    display: none;
+}
+
+/* =========================
+   TIPOGRAFÍA
+   ========================= */
+
+/* Encabezados y etiquetas (usa --header-color para títulos) */
+h1, h2, h3, h4, h5, h6, label {
+    color: var(--header-color);  /* define --header-color en tu app.py */
+}
+
+/* Párrafos */
+p {
+    color: var(--text-color);
+}
+
+/* =========================
+   MÉTRICAS PRINCIPALES
+   (st.metric)
+   ========================= */
+
+/* Tarjeta que envuelve cada métrica */
+[data-testid="metric-container"] {
+    background-color: #0D2740;         /* azul un poco más claro que el fondo */
+    padding: 16px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+}
+
+/* Título de la métrica */
+[data-testid="stMetricLabel"] {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+/* Valor de la métrica */
+[data-testid="stMetricValue"] {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #64B5F6;                     /* azul claro corporativo */
+    opacity: 1 !important;
+}
+
+/* Delta de la métrica (si lo usas) */
+[data-testid="stMetricDelta"] {
+    font-size: 0.8rem;
+}
+
+/* =========================
+   TABS (Evolución, Análisis, etc.)
+   ========================= */
+
+.stTabs [data-baseweb="tab-list"] {
+    gap: 1.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Tab normal */
+.stTabs [data-baseweb="tab"] {
+    color: #B0BEC5;
+    font-weight: 500;
+}
+
+/* Tab seleccionada */
+.stTabs [aria-selected="true"] {
+    color: #FFFFFF !important;
+    border-bottom: 3px solid #64B5F6 !important;  /* subrayado azul corporativo */
+}
+
+/* =========================
+   TARJETAS / SECCIONES
+   ========================= */
+
+/* Clase para secciones principales (úsala con st.markdown o st.container) */
+.section-card {
+    background-color: #0D2740;
+    padding: 20px;
+    border-radius: 16px;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+/* Títulos de sección dentro de las tarjetas */
+.section-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--header-color);
+    margin-bottom: 12px;
+}
